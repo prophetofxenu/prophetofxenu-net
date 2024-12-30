@@ -1,0 +1,444 @@
+@font-face {
+  font-family: 'Funtasia Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Funtasia Regular'), url('fonts/FuntasiaRegular-JRDEM.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SV Basic Manual';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SV Basic Manual'), url('fonts/SVBasicManual.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'SV Basic Manual Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SV Basic Manual Bold'), url('fonts/SVBasicManual-Bold.woff') format('woff');
+}
+
+body {
+  background-color: black;
+  font-family: 'SV Basic Manual', sans-serif;
+  color: white;
+}
+
+button {
+  font-family: 'SV Basic Manual', sans-serif;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.homepage {
+  max-width: 1800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+  .homepage {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.titlebar {
+  font-family: 'Funtasia Regular', sans-serif;
+  text-align: left;
+
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border: 2px solid #db02db;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  padding: 1rem;
+  height: 43px;
+  margin: 0;
+}
+
+.title::after {
+  content: '';
+  display: inline-block;
+  margin-left: 0.05em;
+  height: 0.75em;
+  width: 10px;
+  background-color: white;
+  border-radius: 2px;
+
+  animation: cursor-blink 0.5s steps(20, start) infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cursor-blink {
+  to {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .titlebar {
+    margin-top: 2rem;
+  }
+
+  .title {
+    font-size: 4rem;
+    height: unset;
+  }
+
+  .title::after {
+    width: 25px;
+    border-radius: 6px;
+  }
+}
+
+.background {
+  position: fixed;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #270027;
+  filter: blur(10px);
+}
+
+.background-arc1 {
+  position: absolute;
+  width: 250px;
+  aspect-ratio: 1;
+  padding: 40px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #db02db;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 240deg,#0000 0);
+
+  animation: arc1-rotate 10s ease infinite;
+}
+
+@keyframes arc1-rotate {
+  50% {
+    width: 500px;
+    rotate: 180deg;
+    padding: 80px;
+  }
+
+  100% {
+    width: 250px;
+    rotate: 359deg;
+    padding: 40px;
+  }
+}
+
+.background-arc2 {
+  position: absolute;
+  width: 400px;
+  aspect-ratio: 1;
+  padding: 40px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #db02db;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 90deg,#0000 0);
+  
+  rotate: 30deg;
+
+  animation: arc2-rotate 2s linear infinite;
+}
+
+@keyframes arc2-rotate {
+  to {
+    rotate: -329deg;
+  }
+}
+
+.background-arc3 {
+  position: absolute;
+  width: 800px;
+  aspect-ratio: 1;
+  padding: 50px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #db02db;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 60deg,#0000 0);
+  
+  animation: arc3-rotate 8s linear infinite;
+}
+
+@keyframes arc3-rotate {
+  to {
+    rotate: 359deg;
+  }
+}
+
+.background-arc4 {
+  position: absolute;
+  width: 1000px;
+  aspect-ratio: 1;
+  padding: 100px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #db02db;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 120deg,#0000 0);
+
+  rotate: -60deg;
+  
+  animation: arc4-rotate 30s linear infinite;
+}
+
+@keyframes arc4-rotate {
+  50% {
+    width: 50px;
+    padding: 20px;
+    rotate: 120deg;
+  }
+
+  100% {
+    width: 1000px;
+    padding: 100px;
+    rotate: 299deg;
+  }
+}
+
+.background-arc5 {
+  position: absolute;
+  width: 1000px;
+  aspect-ratio: 1;
+  padding: 30px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #db02db;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 60deg,#0000 0);
+
+  rotate: 10deg;
+  
+  animation: arc5-rotate 5s linear infinite;
+}
+
+@keyframes arc5-rotate {
+  to {
+    rotate: 369deg;
+  }
+}
+
+.background-arc6 {
+  position: absolute;
+  width: 1100px;
+  aspect-ratio: 1;
+  padding: 40px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #db02db;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 180deg,#0000 0);
+
+  rotate: 90deg;
+  
+  animation: arc6-rotate 20s linear infinite;
+}
+
+@keyframes arc6-rotate {
+  to {
+    rotate: 449deg;
+  }
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .art-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.art-container {
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  position: relative;
+
+  background-color: blueviolet;
+  border: 2px solid #db02db;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.art-container-2x2-left {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  height: 56rem;
+}
+
+.art-container-2x2-right {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+  height: 56rem;
+}
+
+.art-container-1x2 {
+  grid-row: 3 / 5;
+  height: 57rem;
+}
+
+.art-container-2x1 {
+  grid-column: 3 / 5;
+}
+
+@media only screen and (max-width: 1000px) {
+  .art-container-2x2-left, .art-container-2x2-right {
+    grid-column: 1 / 3;
+    grid-row: unset;
+  }
+
+  .art-container-1x2 {
+    grid-row: 9 / 11;
+  }
+
+  .art-container-2x1 {
+    grid-column: 1 / 3;
+  }
+}
+
+.art-container-2x1 > img {
+  max-height: 100%;
+}
+
+.art-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.art-container > img:hover {
+  transform: scale(1.15);
+  filter: brightness(0.8);
+}
+
+.art-content-warning {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+
+  backdrop-filter: blur(30px);
+  transition: backdrop-filter 0.2s ease;
+}
+
+.art-content-warning:hover {
+  backdrop-filter: blur(15px);
+}
+
+@media only screen and (max-width: 1000px) {
+  .art-content-warning h1, .art-content-warning h2 {
+    font-size: 3rem;
+  }
+}
+
+.artist-credit-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 15px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  padding-right: 1em;
+  padding-left: 1em;
+
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .artist-credit-container {
+    font-size: 2rem;
+  }
+}
+
+.artist-credit-container-light {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.artist-credit-container-dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#img-view-dialog {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#img-view-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#img-view-dialog > img {
+  max-height: 80vh;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-view-dialog-bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-view-dialog-bottom-row > p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  #img-view-dialog {
+    font-size: 2rem;
+  }
+
+  #img-view-dialog button {
+    font-size: 2rem;
+  }
+
+  #img-view-dialog > img {
+    max-width: 90vw;
+  }
+}
