@@ -32,7 +32,7 @@ const imgDb = {
     ],
   },
   'lingrimm-profile-pic': {
-    url: 'images/xenu-sergal/XENU lingrimm.png',
+    url: 'images/xenu-sergal/XENU-lingrimm.png',
     year: 2024,
     artist: {
       name: 'Lingrimm',
