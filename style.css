@@ -335,6 +335,10 @@ button {
   margin-right: auto;
 }
 
+.img-view-dialog-hidden {
+  visibility: hidden;
+}
+
 .img-view-dialog-bottom-row {
   display: flex;
   justify-content: space-between;

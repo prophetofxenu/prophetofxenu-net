@@ -203,7 +203,12 @@ function openImgViewDialog(imgkey) {
 }
 
 function closeDialog() {
+  imgViewDialogImg.classList.toggle('img-view-dialog-hidden');
   imgViewDialog.close();
+}
+
+function imgViewOnLoad() {
+  imgViewDialogImg.classList.toggle('img-view-dialog-hidden');
 }
 
 function clearContentWarning(id) {
