@@ -350,6 +350,11 @@ button {
     margin-right: 20px;
   }
 
+  /* disable blur on mobile */
+  .background {
+    filter: unset;
+  }
+
   .titlebar {
     margin-top: 2rem;
   }
