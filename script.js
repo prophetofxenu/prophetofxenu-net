@@ -193,6 +193,7 @@ function openImgViewDialog(imgkey) {
       const altLink = document.createElement('button');
       altLink.innerHTML = element.name;
       altLink.addEventListener('click', () => {
+        imgViewDialogImg.classList.toggle('img-view-dialog-hidden');
         imgViewDialogImg.setAttribute('src', element.url);
       });
       imgViewDialogAltContainer.appendChild(altLink);
