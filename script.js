@@ -202,6 +202,11 @@ function openImgViewDialog(imgkey) {
 
   imgViewDialog.showModal();
 }
+function openImgViewDialogKey(event, imgkey) {
+  if (event.keyCode === 13) {
+    openImgViewDialog(imgkey);
+  }
+}
 
 function closeDialog() {
   imgViewDialogImg.classList.toggle('img-view-dialog-hidden');
