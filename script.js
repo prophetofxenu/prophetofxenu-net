@@ -39,6 +39,14 @@ const imgDb = {
       link: 'https://www.furaffinity.net/user/lingrimm/'
     }
   },
+  'herobula-sketches': {
+    url: 'images/xenu-sergal/herobula-sketches.png',
+    year: 2025,
+    artist: {
+      name: 'Herobula',
+      link: 'https://bsky.app/profile/herobula.bsky.social'
+    }
+  },
   'gata-profile-pic': {
     url: 'images/xenu-sergal/gata-purple-gradient.png',
     year: 2024,
