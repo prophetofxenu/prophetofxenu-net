@@ -39,6 +39,44 @@ const imgDb = {
       link: 'https://www.furaffinity.net/user/lingrimm/'
     }
   },
+  'saffysweets-stickers': {
+    url: 'images/xenu-sergal/saffysweets-stickers/Xenu4.png',
+    year: 2025,
+    artist: {
+      name: 'SaffySweets',
+      link: 'https://vgen.co/SaffySweets'
+    },
+    alternates: [
+      {
+        name: 'content',
+        url: 'images/xenu-sergal/saffysweets-stickers/Xenu4.png'
+      },
+      {
+        name: 'thumbs up',
+        url: 'images/xenu-sergal/saffysweets-stickers/Xenu1.png'
+      },
+      {
+        name: 'worried',
+        url: 'images/xenu-sergal/saffysweets-stickers/Xenu2.png'
+      },
+      {
+        name: 'hold still',
+        url: 'images/xenu-sergal/saffysweets-stickers/Xenu3.png'
+      },
+      {
+        name: 'pim',
+        url: 'images/xenu-sergal/saffysweets-stickers/Xenu5.png'
+      }
+    ]
+  },
+  'alfafilly-toned-sketch': {
+    url: 'images/xenu-sergal/Com_Xenu_TonedSketchFNL.png',
+    year: 2025,
+    artist: {
+      name: 'AlfaFilly',
+      link: 'https://linktr.ee/alfafilly'
+    },
+  },
   'herobula-sketches': {
     url: 'images/xenu-sergal/herobula-sketches.png',
     year: 2025,

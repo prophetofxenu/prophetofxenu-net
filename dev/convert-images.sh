@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
 images=$(find images -name '*.png' -o -name '*.jpg')
