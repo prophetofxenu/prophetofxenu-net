@@ -387,10 +387,6 @@ button {
     grid-row: unset;
   }
 
-  .art-container-1x2 {
-    grid-row: 9 / 11;
-  }
-
   .art-content-warning h1, .art-content-warning h2 {
     font-size: 3rem;
   }
