@@ -39,6 +39,14 @@ const imgDb = {
       link: 'https://www.furaffinity.net/user/lingrimm/'
     }
   },
+  'alfafilly-monsterfy-icon': {
+    url: 'images/xenu-sergal/MonsterfyICONS_XENUfnl.png',
+    year: 2025,
+    artist: {
+      name: 'AlfaFilly',
+      link: 'https://linktr.ee/alfafilly'
+    }
+  },
   'alfafilly-pride-wrath': {
     url: 'images/xenu-sergal/YCH_Banner_XenuBG.png',
     year: 2025,
