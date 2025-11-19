@@ -12,6 +12,14 @@ let timerInterval = setInterval(() => {
 
 
 const imgDb = {
+  'raivesper-xenu-space': {
+    url: 'images/xenu-sergal/raivesper-xenu-space.png',
+    year: 2025,
+    artist: {
+      name: 'RaiVesper',
+      link: 'https://linktr.ee/RaiVesper'
+    }
+  },
   'monsterfy2024': {
     url: 'images/xenu-sergal/Com_Monsterfy_XenuFNLv2sm.png',
     description: 'sipped the akira juice',
