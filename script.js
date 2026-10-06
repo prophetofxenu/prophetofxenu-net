@@ -12,6 +12,23 @@ let timerInterval = setInterval(() => {
 
 
 const imgDb = {
+  'kiwicabbit-sketch': {
+    url: 'images/xenu-sergal/xenu-kiwicabbit.png',
+    year: 2026,
+    artist: {
+      name: 'Kiwicabbit',
+      link: 'https://www.kiwicabbit.com'
+    }
+  },
+  'alfafilly-pool': {
+    url: 'images/xenu-sergal/YCH_PoolFloaty_XenuFNL.png',
+    description: 'it\'s a white serg summer',
+    year: 2026,
+    artist: {
+      name: 'AlfaFilly',
+      link: 'https://alfafilly.carrd.co'
+    }
+  },
   'raivesper-xenu-space': {
     url: 'images/xenu-sergal/raivesper-xenu-space.png',
     year: 2025,
@@ -26,7 +43,7 @@ const imgDb = {
     year: 2024,
     artist: {
       name: 'AlfaFilly',
-      link: 'https://linktr.ee/alfafilly'
+      link: 'https://alfafilly.carrd.co'
     },
     alternates: [
       {
@@ -52,7 +69,7 @@ const imgDb = {
     year: 2025,
     artist: {
       name: 'AlfaFilly',
-      link: 'https://linktr.ee/alfafilly'
+      link: 'https://alfafilly.carrd.co'
     }
   },
   'alfafilly-pride-wrath': {
@@ -60,7 +77,7 @@ const imgDb = {
     year: 2025,
     artist: {
       name: 'AlfaFilly',
-      link: 'https://linktr.ee/alfafilly'
+      link: 'https://alfafilly.carrd.co'
     }
   },
   'saffysweets-stickers': {
@@ -98,7 +115,7 @@ const imgDb = {
     year: 2025,
     artist: {
       name: 'AlfaFilly',
-      link: 'https://linktr.ee/alfafilly'
+      link: 'https://alfafilly.carrd.co'
     },
   },
   'herobula-sketches': {

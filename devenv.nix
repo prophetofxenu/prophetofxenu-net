@@ -1,8 +1,6 @@
-{ pkgs, lib, config, inputs, ... }:
+{ pkgs, ... }:
 
 {
-  # env.GREET = "devenv";
-
   # https://devenv.sh/packages/
   packages = [
     pkgs.git
@@ -10,9 +8,6 @@
   ];
 
   # https://devenv.sh/scripts/
-  scripts.hello.exec = ''
-    echo hello from $GREET
-  '';
   scripts.convertImages.exec = ''
     images=$(find images -name '*.png' -o -name '*.jpg')
 
@@ -27,15 +22,6 @@
       fi
     done
   '';
-
-  # https://devenv.sh/basics/
-  # enterShell = ''
-  # '';
-
-  # https://devenv.sh/tasks/
-  tasks = {
-    "prophetofxenu-net:convertImages".exec = ''convertImages'';
-  };
 
   # See full reference at https://devenv.sh/reference/options/
 }
